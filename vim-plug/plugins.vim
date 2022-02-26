@@ -18,5 +18,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'alessandroyorba/sierra'
     " Stable version of coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Nerd Font
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
