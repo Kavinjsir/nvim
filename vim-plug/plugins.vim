@@ -16,5 +16,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Theme Sierra
     Plug 'alessandroyorba/sierra'
+    " Stable version of coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
