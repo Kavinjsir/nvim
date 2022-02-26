@@ -37,6 +37,19 @@ Once the theme config file set, apply it in `init.vim`:
 source $HOME/.config/nvim/themes/sierra.vim
 ```
 
+### Enable Icon
+1. Install `Nerd Fonts`
+```
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
+
+Ref: https://github.com/ryanoasis/nerd-fonts
+
+2. Install the relative plugin
+```
+Plug 'ryanoasis/vim-devicons'
+```
 
 ### References:
 [vimawesome](https://vimawesome.com/)
