@@ -14,5 +14,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+    " Theme Sierra
+    Plug 'alessandroyorba/sierra'
 
 call plug#end()
