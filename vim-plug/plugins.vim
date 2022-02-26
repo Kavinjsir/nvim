@@ -20,5 +20,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Nerd Font
     Plug 'ryanoasis/vim-devicons'
+    " Theme ayu
+    Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
