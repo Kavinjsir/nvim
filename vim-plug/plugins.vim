@@ -11,7 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
     " File Explorer
-    Plug 'scrooloose/NERDTree'
+    " Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     " Theme Sierra
@@ -25,5 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    " Ranger
+    Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 call plug#end()

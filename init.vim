@@ -6,4 +6,5 @@ source $HOME/.config/nvim/themes/aireline.vim
 source $HOME/.config/nvim/themes/ayu.vim
 
 source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/rnvimr.vim
 
