@@ -70,6 +70,32 @@ Ref: https://github.com/ryanoasis/nerd-fonts
 Plug 'ryanoasis/vim-devicons'
 ```
 
+### File explorer by coc-explorer
+1. Install `coc-explorer`
+```
+:CocInstall coc-explorer
+```
+2. Add view settings in `coc-settings.json`
+```
+  // coc-explorer
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+
+```
+3. Add [Presets](https://github.com/weirongxu/coc-explorer#presets) in `plug-config/coc.vim`
+Presumably, there should add keyMapping:
+```
+nmap <space>e :CocCommand explorer<CR>
+nmap <space>f :CocCommand explorer --preset floating<CR>
+```
+*(Feels like floating mode is much faster than flat mode)*
+
+
 ### References:
 [vimawesome](https://vimawesome.com/)
 
