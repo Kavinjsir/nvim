@@ -1,6 +1,6 @@
 ## My nvim config
 
-*Refer to: [Christian C's nvim series](https://www.chrisatmachine.com/neovim)*
+*Refer to: [Christian C's nvim series](https://www.chrisatmachine.com/neovim)*<br /><br />
 
 ## Intro
 ```
@@ -22,6 +22,8 @@
 
 ## Start on a New Machine
 Plz refer to: https://www.chrisatmachine.com/Neovim/01-vim-plug/
+<br />
+<br />
 
 
 ## Add a Theme
@@ -56,7 +58,6 @@ Once the theme config file set, apply it in `init.vim`:
 source $HOME/.config/nvim/themes/sierra.vim
 ```
 
-
 ## Enable Icon
 1. Install `Nerd Fonts`
 ```
@@ -70,7 +71,6 @@ Ref: https://github.com/ryanoasis/nerd-fonts
 ```
 Plug 'ryanoasis/vim-devicons'
 ```
-
 
 ## File explorer by coc-explorer
 1. Install `coc-explorer`
@@ -96,12 +96,10 @@ nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 ```
 *(Feels like floating mode is much faster than flat mode)*
-
+<br />
 
 ## List of things
 1. Colorizer: [A color highlighter based on the value in code](https://www.youtube.com/watch?v=Rg5ccrQ7jbc&list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg&index=13&ab_channel=chris%40machine)
 
-
 ## References:
 [vimawesome](https://vimawesome.com/)
-
