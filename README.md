@@ -100,6 +100,7 @@ nmap <space>f :CocCommand explorer --preset floating<CR>
 
 ## List of things
 1. Colorizer: [A color highlighter based on the value in code](https://www.youtube.com/watch?v=Rg5ccrQ7jbc&list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg&index=13&ab_channel=chris%40machine)
+2. Startify: [Yet another landing page of neovim](https://www.youtube.com/watch?v=9IcXJvoPHCY&list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg&index=14&ab_channel=chris%40machine)
 
 ## References:
 [vimawesome](https://vimawesome.com/)
