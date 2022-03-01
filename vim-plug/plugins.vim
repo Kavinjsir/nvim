@@ -33,5 +33,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-rooter'
     " Colored parentheses
     Plug 'junegunn/rainbow_parentheses.vim'
+    " Git diff
+    Plug 'airblade/vim-gitgutter'
 
 call plug#end()
