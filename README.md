@@ -96,7 +96,6 @@ nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 ```
 *(Feels like floating mode is much faster than flat mode)*
-<br />
 
 ## Reduce finger motion by sneak
 1. Installation
