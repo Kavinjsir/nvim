@@ -35,5 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/rainbow_parentheses.vim'
     " Git diff
     Plug 'airblade/vim-gitgutter'
+    " Relief finger motion with Sneak
+    Plug 'justinmk/vim-sneak'
 
 call plug#end()
