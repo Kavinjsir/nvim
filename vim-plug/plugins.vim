@@ -37,5 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
     " Relief finger motion with Sneak
     Plug 'justinmk/vim-sneak'
+    " Record my coding time
+    Plug 'wakatime/vim-wakatime'
 
 call plug#end()
