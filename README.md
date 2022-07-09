@@ -1,5 +1,13 @@
 ## My nvim config
 
+Clone the repo and move the content to `~/.config/nvim`
+
+You may use softlink:
+```shell
+# Use absolute path
+ln -s /home/cool/programming/nvim /home/cool/.config/nvim
+```
+
 *Refer to: [Christian C's nvim series](https://www.chrisatmachine.com/neovim)*<br /><br />
 
 ## Intro
@@ -116,6 +124,47 @@ s{char}{char}
 - `S` search above (reverse order)
 - `<number>s` search within the `<number>`column. (Like vertically)
 - [more usage](https://github.com/justinmk/vim-sneak#usage)
+
+## View images in vim (Ubuntu)
+1. Install `ranger`
+```shell
+sudo apt install ranger
+```
+
+2. Install `ranger` devicons
+```shell
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+```
+
+3. Install `pip` if not found
+```shell
+sudo apt install -y python3-pip
+```
+
+5. Install `ueberzug`
+```shell
+# Install dependencies
+sudo apt-get install libx11-dev lixext-dev
+
+# Install ueberzug (verify cmd is in the OS path)
+pip3 install ueberzug
+```
+
+6. Configure `ranger`
+```shell
+# 1. Generate default config
+ranger --copy-config rc
+
+# 2. Adjust following lines in the config file:
+#    ~/.config/ranger/rc.conf
+
+set preview_images_method ueberzug
+
+default_linemode devicons
+
+set show_hidden true
+
+```
 
 ## List of things (Temporary overwhelmed for me orz...)
 1. Colorizer: [A color highlighter based on the value in code](https://www.youtube.com/watch?v=Rg5ccrQ7jbc&list=PLhoH5vyxr6QqPtKMp03pcJd_Vg8FZ0rtg&index=13&ab_channel=chris%40machine)
