@@ -1,6 +1,6 @@
 " set leader key
 let g:mapleader = "\<Space>"
-let g:python3_host_prog = expand("/Users/jintony/opt/anaconda3/bin/python")
+" let g:python3_host_prog = expand("/Users/jintony/opt/anaconda3/bin/python")
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
