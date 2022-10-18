@@ -40,4 +40,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Record my coding time
     Plug 'wakatime/vim-wakatime'
 
+    " Theme fixed solarized
+    Plug 'overcache/NeoSolarized'
 call plug#end()
