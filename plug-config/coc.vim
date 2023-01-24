@@ -175,6 +175,9 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" Ignore coc warning while startup
+" let g:coc_disable_startup_warning = 1
+
 " Settings for coc-explorer
 let g:coc_explorer_global_presets = {
 \   '.vim': {
@@ -231,3 +234,7 @@ nmap <space>f :CocCommand explorer --preset floating<CR>
 " List all presets
 nmap <space>el <Cmd>CocList explPresets<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+" Adjust Explorer Floating Background
+" autocmd ColorScheme *
+"   \ hi CocExplorerNormalFloat guibg=#272B34
