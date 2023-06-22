@@ -222,7 +222,7 @@ let g:coc_explorer_global_presets = {
 
 " Use preset argument to open it
 nmap <space>e :CocCommand explorer<CR>
-nmap <space>f :CocCommand explorer --preset floating<CR>
+nmap <space>f :CocCommand explorer --position floating<CR>
 " nmap <space>ed <Cmd>CocCommand explorer --preset .vim<CR>
 " nmap <space>ef <Cmd>CocCommand explorer --preset floating<CR>
 " nmap <space>ec <Cmd>CocCommand explorer --preset cocConfig<CR>
