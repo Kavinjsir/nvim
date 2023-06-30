@@ -52,4 +52,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Theme fixed solarized
     Plug 'overcache/NeoSolarized'
+
+    " Theme onedark
+    Plug 'joshdick/onedark.vim'
+
 call plug#end()
