@@ -17,8 +17,18 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
+    -- languages
     { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    -- ui polish
+    { import = "lazyvim.plugins.extras.ui.indent-blankline" },
+    -- editor
+    { import = "lazyvim.plugins.extras.editor.illuminate" },
     { import = "plugins" },
   },
   defaults = {
