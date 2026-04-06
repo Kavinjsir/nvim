@@ -179,3 +179,34 @@ return {
 ```
 
 Then run `:Lazy sync`.
+
+## Updating Packages
+
+### Inside Neovim
+
+| Command | Action |
+|---------|--------|
+| `:Lazy sync` | Update all plugins (install, update, clean) |
+| `:Lazy check` | Check for plugin updates without applying |
+| `:Lazy restore` | Restore plugins to versions in `lazy-lock.json` |
+| `:MasonUpdate` | Update the Mason registry |
+| `:Mason` → `U` | Update all LSP servers, formatters, linters |
+
+### From the command line
+
+```sh
+# Update plugins only
+nvim --headless -c "Lazy! sync" -c "qa"
+
+# Update Mason registry only
+nvim --headless -c "lua require('mason.api.command').MasonUpdate()" -c "qa"
+
+# Update both
+nvim --headless -c "Lazy! sync" -c "lua require('mason.api.command').MasonUpdate()" -c "qa"
+```
+
+After updating, commit the lock file so you can roll back:
+
+```sh
+cd ~/.config/nvim && git add lazy-lock.json && git commit -m "Update plugins"
+```
