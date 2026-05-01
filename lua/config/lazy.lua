@@ -14,12 +14,16 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Use basedpyright (instead of the default pyright) when the lang.python extra loads
+vim.g.lazyvim_python_lsp = "basedpyright"
+
 require("lazy").setup({
   spec = {
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     -- languages
+    { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
